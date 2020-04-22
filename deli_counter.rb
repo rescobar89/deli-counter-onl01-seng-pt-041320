@@ -12,5 +12,6 @@ def line(katz_deli)
     serving = []
     katz_deli.each {|name, index| serving << "#{index+1}. #{name}"}
     puts "The line is currently: " << serving.join(" ")
+  end
 end
 
