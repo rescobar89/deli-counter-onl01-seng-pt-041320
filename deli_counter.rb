@@ -10,5 +10,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     serving = []
-    katz_deli.each {|serve, index|} serving << "#{index+1}. #{name}" 
-    puts "The line is currently: " << serving.join
+    katz_deli.each {|name, index|} serving << "#{index+1}. #{name}" 
+    puts "The line is currently: " << serving.join(" ")
+end
+
